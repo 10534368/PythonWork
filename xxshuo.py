@@ -1,6 +1,6 @@
-from selenium import webdriver
 import time
-from selenium.webdriver.common.keys import Keys
+
+from selenium import webdriver
 
 a=webdriver.Chrome()
 a.get("http://127.0.0.1:8000")
