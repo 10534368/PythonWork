@@ -4,7 +4,7 @@ import time
 
 a=webdriver.Chrome()
 a.get("http://stu.1000phone.net")
-a.find_element_by_name("Account").send_keys("41018219970121291X")
+a.find_element_by_name("Account").send_keys(input())
 a.find_element_by_name("PassWord").send_keys(input())
 a.find_element_by_xpath("//button[@class='width-100 pull-right btn btn-sm btn-primary']").click()
 a.find_element_by_xpath("//li[5]/a[@class='dropdown-toggle']").click()
