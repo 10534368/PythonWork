@@ -1,6 +1,7 @@
-from selenium import webdriver
-from lxml import etree
 import time
+
+from lxml import etree
+from selenium import webdriver
 
 url="https://image.baidu.com/"
 a=webdriver.Chrome()
@@ -17,8 +18,6 @@ while True:
     print(content2)
     print(etree.HTML(a.page_source).xpath("//img[@class='main_img img-hover']"))
     print(len(result))
-    # for i in result:
-        # print(i)
     m = n + 500
     a.execute_script(f"window.scrollTo({n},{m})")
     n += 500
