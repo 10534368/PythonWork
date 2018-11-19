@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PythonWork.iml" filepath="$PROJECT_DIR$/.idea/PythonWork.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/Tencent Files/1053443368/FileRecv/WH1803Django.20180928/WH1803Django.20180928/.idea/WH1803Django.iml" filepath="$USER_HOME$/Documents/Tencent Files/1053443368/FileRecv/WH1803Django.20180928/WH1803Django.20180928/.idea/WH1803Django.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/db/.idea/db.iml" filepath="$USER_HOME$/PycharmProjects/db/.idea/db.iml" />
+      <module fileurl="file://D:/djgou/douwone/.idea/douwone.iml" filepath="D:/djgou/douwone/.idea/douwone.iml" />
+      <module fileurl="file://D:/djgou/public/.idea/public.iml" filepath="D:/djgou/public/.idea/public.iml" />
+      <module fileurl="file://D:/djgou/wh1804_lvyunpeng/.idea/wh1804_lvyunpeng.iml" filepath="D:/djgou/wh1804_lvyunpeng/.idea/wh1804_lvyunpeng.iml" />
+      <module fileurl="file://D:/djgou/wh_1804_django/.idea/wh_1804_django.iml" filepath="D:/djgou/wh_1804_django/.idea/wh_1804_django.iml" />
+    </modules>
+  </component>
+</project>

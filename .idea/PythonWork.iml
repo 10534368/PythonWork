@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="django" name="Django">
+      <configuration>
+        <option name="rootFolder" value="" />
+        <option name="settingsModule" value="" />
+        <option name="manageScript" value="" />
+        <option name="environment" value="&lt;map/&gt;" />
+        <option name="doNotUseTestRunner" value="false" />
+        <option name="trackFilePattern" value="" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="Flask">
+    <option name="enabled" value="true" />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.6.0 (D:\python3.6\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="db" />
+    <orderEntry type="module" module-name="jd_search" />
+    <orderEntry type="module" module-name="lianjia" />
+    <orderEntry type="module" module-name="qiubai_proj" />
+    <orderEntry type="module" module-name="SH1802Django" />
+    <orderEntry type="module" module-name="wh_1804_django" />
+    <orderEntry type="module" module-name="wh1804_lvyunpeng" />
+    <orderEntry type="module" module-name="public" />
+    <orderEntry type="module" module-name="douwone" />
+    <orderEntry type="module" module-name="WH1803Django" />
+    <orderEntry type="module" module-name="dj_Book" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Django" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>
