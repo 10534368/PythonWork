@@ -82,11 +82,11 @@ def login(url):
     tag_url_list = tree.xpath("//div[@class='area areabg1']/div/div[@class='more']/a/@href")
     # 爬取分类标签
     tag_list = tree.xpath("/html/body/div[@class='area areabg1']/div/h2/text()")
-    _tag_list =  tag_list[12:15]
+    _tag_list = tag_list[1:9] + tag_list[11:15]
     # for i in _tag_list:
     #     sql = [f"INSERT into kind(type)  VALUES ('{i}')"]
     #     add(sql)
-    _tag_url_list = tag_url_list[12:15]
+    _tag_url_list = tag_url_list[1:9] + tag_url_list[11:15]
     for i in range(len(_tag_url_list)):
         response = requests.get(_tag_url_list[i])
         response.encoding = "gb2312"
