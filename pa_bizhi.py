@@ -19,7 +19,7 @@ while True:
     img_url_list = etree.HTML(a.page_source).xpath(
         "//div[@class='main-wrap']/div[@class='scroll-img-cont']/ul[@id='scroll']/li/a/img/@data-original")
     title = etree.HTML(a.page_source).xpath("//h1/text()")[0]
-    n=1
+    n = 1
     for img_url in img_url_list:
         new_img_url = img_url[:-11] + "_1366_768" + img_url[-4:]
         print(new_img_url)
