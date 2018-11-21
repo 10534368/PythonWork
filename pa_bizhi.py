@@ -34,3 +34,7 @@ while True:
     except:
         print("Success")
         a.quit()
+
+# n=1
+# f"http://bizhi.knowsky.com/zmbz_{n}.htm"
+# "//div[@class='piccontainer']/div[@class='scrolltab']//img/@src"
