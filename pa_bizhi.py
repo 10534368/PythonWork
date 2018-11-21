@@ -8,7 +8,7 @@ headers = {
     'User-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
                   '50.0.2661.102 Safari/537.36'}
 url = "http://www.win4000.com/wallpaper_detail_152656.html"
-path = r"C:\Users\lenve\Desktop\壁纸"
+path = r"D:\新建文件夹\壁纸"
 is_true = os.path.exists(path)
 if not is_true:
     os.makedirs(path)
@@ -26,8 +26,10 @@ while True:
         print(new_img_url)
         str1 = request.urlopen(request.Request(url=new_img_url, headers=headers)).read()
         path2 = path + fr"\{title}_{n}.jpg"
-        with open(path2, "wb") as f:
-            f.write(str1)
+        is_true = os.path.exists(path2)
+        if not is_true:
+            with open(path2, "wb") as f:
+                f.write(str1)
         n += 1
     try:
         a.find_element_by_xpath("//span[@class='group-next']/a").click()
