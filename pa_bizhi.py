@@ -8,8 +8,8 @@ headers = {
     'User-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 url = "http://www.win4000.com/wallpaper_detail_152656.html"
 path = r"C:\Users\lenve\Desktop\壁纸"
-istrue = os.path.exists(path)
-if not istrue:
+is_true = os.path.exists(path)
+if not is_true:
     os.makedirs(path)
 options = webdriver.ChromeOptions()
 options.add_argument('lang=zh_CN.utf-8')

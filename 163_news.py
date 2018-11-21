@@ -17,8 +17,8 @@ def add(sql):  # 将数据存入数据库
     for i in sql:
         try:
             cursor.execute(i)
-        except:
-            pass
+        except Exception as e:
+            print(e)
     conn.commit()
 
 
@@ -62,9 +62,9 @@ def main(url_list, tag):
             type_id = find(sql)
             #  标签id
             update_time = tree.xpath("//div[@class='post_time_source']/text()")[0][:-5]  # 更新时间
-            for i in range(len(update_time)):
-                if update_time[i] == "2":
-                    update_time = update_time[i:]
+            for num in range(len(update_time)):
+                if update_time[num] == "2":
+                    update_time = update_time[num:]
                     break
             article_source = tree.xpath("//a[@id='ne_article_source']/text()")[0]  # 文章来源
             editor = tree.xpath("//span[@class='ep-editor']/text()")[0]  # 责任编辑
