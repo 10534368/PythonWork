@@ -1,8 +1,6 @@
-from selenium import webdriver
 import time
-import pytesseract
-from PIL import Image
-import matplotlib
+
+from selenium import webdriver
 
 # text=pytesseract.image_to_string(Image.open(r"D:\PythonWork\6.png"),lang="eng")
 # text=text.replace(" ","")

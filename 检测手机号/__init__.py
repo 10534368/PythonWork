@@ -1,10 +1,7 @@
 # coding=utf-8
-from lxml import etree
-from lxml.html import tostring
+from urllib import request  # Mac
+
 from bs4 import BeautifulSoup
-import os
-import lxml
-from urllib import request# Mac
 # from urllib.request import Request, urlopen # Win
 from lxml import etree
 
@@ -17,14 +14,17 @@ html = request.urlopen('https://news.163.com/18/1115/10/E0L8BNJR000189FH.html').
 # '''
 soup = BeautifulSoup(html, 'html.parser', from_encoding='utf-8')
 # print(html)
-print(type(soup))
 tree = etree.HTML(str(soup))
 
 strs = tree.xpath( "//div[@id='epContentLeft']/div[@class='post_body']/div[@id='endText']/p")
-strs = strs[0]
+for i in strs:
+    stre = i.xpath("text()")
+    print(stre)
 # strs = (etree.tostring(strs)) # 不能正常显示中文
-strs = (etree.tostring(strs, pretty_print = True, method = "html")) # 可以正常显示中文
+# strs = (etree.tostring(strs, pretty_print = True, method = "html")) # 可以正常显示中文
 print (strs)
+print(len(strs))
+print(type(strs))
 # 结果为：退火对Nb
 # content1 = tree.xpath("//p")[0]
 # print(str(etree.tostring(content1,encoding = "utf-8", pretty_print=True, method="html"))[2:-1])
