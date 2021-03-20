@@ -64,7 +64,7 @@ incremental==17.5.0
 itsdangerous==0.24
 itypes==1.1.0
 jdcal==1.4
-Jinja2==2.10
+Jinja2==2.11.3
 Keras-Applications==1.0.6
 Keras-Preprocessing==1.0.5
 kiwisolver==1.0.1
